@@ -1,0 +1,19 @@
+$color-text: #fff;
+$font-stack: "Montserrat", sans-serif;
+
+@mixin background {
+  background-color: grey;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+}
+
+@mixin checkbox-before {
+    content: " ";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    z-index: 4;
+    transform: translateX(-29px);
+}

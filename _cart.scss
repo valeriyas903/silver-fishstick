@@ -1,0 +1,170 @@
+.header {
+
+  &__cart {
+    background-image: url(img/cart.png);
+    padding-bottom: 35px;
+  }
+}
+
+.cart {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  margin-top: 64px;
+
+  &__name-box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+  }
+
+  &__item {
+    border-top: 0.5px solid rgb(202, 205, 216);
+    padding-top: 25px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__left {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__info {
+    width: 276px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__info-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+  }
+
+  &__info-text {
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+  }
+
+  &__info-price {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__link-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &__input {
+    width: 71px;
+    height: 51px;
+    border-radius: 6px;
+    background: rgb(247, 246, 246);
+    border: none;
+    outline: none;
+    text-align-last: center;
+  }
+
+  &__form {
+    border-radius: 20px;
+    background: rgb(247, 246, 246);
+    height: 556px;
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px 0 148px 0
+  }
+
+  &__form-title {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__form-item {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid rgb(202, 205, 216);
+    max-width: 288px;
+    width: 100%;
+    margin: 0 64px 0 27px;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    appearance: none;
+    color: rgb(0, 0, 0);
+  }
+
+  &__form-price {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__form-sum {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__form-btn {
+    font-style: inherit;
+    border-radius: 20px;
+    width: 290px;
+    height: 41px;
+    cursor: pointer;
+  transition: filter 0.3s, background 0.3s, color 0.3s;
+}
+  
+  &__content {
+    grid-column: span 8;
+  }
+
+  &__content-btn {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    width: 200px;
+    height: 37px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: filter 0.3s, background 0.3s, color 0.3s;
+  }
+
+    &__content-btn2 {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    width: 200px;
+    height: 37px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: filter 0.3s, background 0.3s, color 0.3s;
+  }
+
+
+.cart__form-btn:hover,
+.cart__form-btn:focus
+.cart__content-btn:hover,
+.cart__content-btn:focus {
+  filter: brightness(1.3);
+}
+
+}
