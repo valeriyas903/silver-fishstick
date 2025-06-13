@@ -725,6 +725,14 @@ button {
   width: 14px;
   height: 14px;
 }
+.main #black:checked + label::after {
+  content: url(svg/Vector-white.svg);
+  position: absolute;
+  left: 3px;
+  top: -3px;
+  width: 14px;
+  height: 14px;
+}
 .main #white + label::before {
   background: #fff;
 }
@@ -901,10 +909,6 @@ input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     max-width: 376px;
   }
-  .cart__buttons {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
 }
 @media (min-width: 768px) and (max-width: 833px) {
   .header__center {
@@ -1034,6 +1038,7 @@ input[type=range]::-webkit-slider-runnable-track {
     width: 287px;
     height: 910px;
     margin-left: 500px;
+    margin-right: 73px;
   }
   .main__form {
     -moz-column-gap: 64px;
@@ -1068,8 +1073,6 @@ input[type=range]::-webkit-slider-runnable-track {
     font-weight: 500;
   }
   .cart__buttons {
-    padding-left: 16px;
-    padding-right: 16px;
     gap: 14px;
   }
 }/*# sourceMappingURL=style.css.map */

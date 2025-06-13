@@ -169,11 +169,21 @@
     }
   }
 
+  #black:checked + label::after {
+  content: url(svg/Vector-white.svg);
+  position: absolute;
+  left: 3px;
+  top: -3px;
+  width: 14px;
+  height: 14px;
+}
+
   #white + label::before {
     background: #fff;
   }
   #black + label::before {
     background: #000;
+    
   }
   #gray + label::before {
     background: #888888;
